@@ -6,7 +6,7 @@
 # catalog-version 0.12
 Name:		texlive-pythontex
 Version:	0.12
-Release:	1
+Release:	1.1
 Summary:	Run Python from within a document, typesetting the results
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pythontex
@@ -18,7 +18,9 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Requires:	texlive-pythontex.bin
+# FIXME not really, only during update
+Provides:	texlive-pythontex.bin
+#Requires:	texlive-pythontex.bin
 
 %description
 The package allows you to enter Python code within a LaTeX
