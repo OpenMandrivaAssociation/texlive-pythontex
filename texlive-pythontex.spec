@@ -6,7 +6,7 @@
 # catalog-version 0.12
 Name:		texlive-pythontex
 Version:	0.12
-Release:	1.6
+Release:	1.7
 Summary:	Run Python from within a document, typesetting the results
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pythontex
