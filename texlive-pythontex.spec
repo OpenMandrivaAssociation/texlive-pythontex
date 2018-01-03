@@ -1,12 +1,6 @@
-# revision 31686
-# category Package
-# catalog-ctan /macros/latex/contrib/pythontex
-# catalog-date 2013-09-17 11:10:59 +0200
-# catalog-license lppl1.3
-# catalog-version 0.12
 Name:		texlive-pythontex
-Version:	0.12
-Release:	1.9
+Version:	0.16
+Release:	1
 Summary:	Run Python from within a document, typesetting the results
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pythontex
@@ -49,27 +43,11 @@ conversion to other formats.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/scripts/pythontex/depythontex.py
-%{_texmfdistdir}/scripts/pythontex/depythontex2.py
-%{_texmfdistdir}/scripts/pythontex/depythontex3.py
-%{_texmfdistdir}/scripts/pythontex/pythontex.py
-%{_texmfdistdir}/scripts/pythontex/pythontex2.py
-%{_texmfdistdir}/scripts/pythontex/pythontex3.py
-%{_texmfdistdir}/scripts/pythontex/pythontex_2to3.py
-%{_texmfdistdir}/scripts/pythontex/pythontex_engines.py
-%{_texmfdistdir}/scripts/pythontex/pythontex_install_texlive.py
-%{_texmfdistdir}/scripts/pythontex/pythontex_utils.py
-%{_texmfdistdir}/tex/latex/pythontex/pythontex.sty
-%doc %{_texmfdistdir}/doc/latex/pythontex/README
-%doc %{_texmfdistdir}/doc/latex/pythontex/pythontex.pdf
-%doc %{_texmfdistdir}/doc/latex/pythontex/pythontex_gallery.pdf
-%doc %{_texmfdistdir}/doc/latex/pythontex/pythontex_gallery.tex
-%doc %{_texmfdistdir}/doc/latex/pythontex/pythontex_quickstart.pdf
-%doc %{_texmfdistdir}/doc/latex/pythontex/pythontex_quickstart.tex
+%{_texmfdistdir}/scripts/pythontex
+%{_texmfdistdir}/tex/latex/pythontex
+%doc %{_texmfdistdir}/doc/latex/pythontex
 #- source
-%doc %{_texmfdistdir}/source/latex/pythontex/pythontex.bat
-%doc %{_texmfdistdir}/source/latex/pythontex/pythontex.dtx
-%doc %{_texmfdistdir}/source/latex/pythontex/pythontex.ins
+%doc %{_texmfdistdir}/source/latex/pythontex
 
 #-----------------------------------------------------------------------
 %prep
