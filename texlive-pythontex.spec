@@ -1,13 +1,13 @@
 Name:		texlive-pythontex
-Version:	0.16
-Release:	2
+Version:	59514
+Release:	1
 Summary:	Run Python from within a document, typesetting the results
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pythontex
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -34,12 +34,12 @@ useful for journal submissions, sharing documents, and
 conversion to other formats.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +51,8 @@ conversion to other formats.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
