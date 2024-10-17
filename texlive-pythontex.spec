@@ -3,7 +3,7 @@ Version:	59514
 Release:	2
 Summary:	Run Python from within a document, typesetting the results
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pythontex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/pythontex
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pythontex.doc.r%{version}.tar.xz
